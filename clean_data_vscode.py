@@ -18,7 +18,7 @@ print(df.head())
 # ==============================
 
 engine = create_engine(
-    "postgresql+psycopg2://postgres:Sarkaparka6@localhost:5432/postgres"
+    "postgresql+psycopg2://postgres:xxxxx@localhost:5432/postgres"
 )
 
 
@@ -32,5 +32,6 @@ df.to_sql(
     if_exists="replace",
     index=False
 )
+
 
 print("Data successfully exported to PostgreSQL.")
